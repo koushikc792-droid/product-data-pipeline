@@ -17,15 +17,17 @@ A Python data-cleaning pipeline that fetches user data from an API, cleans and v
 
 ```text
 product-data-pipeline/
-├── config.py
-├── pipeline.py
-├── requirements.txt
-├── README.md
+├── src/
+│   ├── config.py
+│   └── pipeline.py
 ├── output/
 │   ├── users_raw.csv
 │   ├── users_cleaned.csv
 │   └── pipeline.log
-└── screenshots/
+├── screenshots/
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ## Installation
@@ -37,7 +39,7 @@ pip install -r requirements.txt
 ## Run the Pipeline
 
 ```bash
-python pipeline.py
+python src/pipeline.py
 ```
 
 ## Output
